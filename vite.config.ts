@@ -1,6 +1,6 @@
-import UnoCSS from "unocss/vite"
-import Checker from "vite-plugin-checker"
-import Solid from "vite-plugin-solid"
+import pluginUno from "unocss/vite"
+import pluginChecker from "vite-plugin-checker"
+import pluginSolid from "vite-plugin-solid"
 
 import { defineConfig } from "vite"
 
@@ -15,9 +15,9 @@ export default defineConfig({
         target: ["es2021", "chrome105", "safari13"]
     },
     plugins: [
-        Solid(),
-        UnoCSS(),
-        Checker({
+        pluginSolid(),
+        pluginUno(),
+        pluginChecker({
             typescript: { tsconfigPath: "tsconfig.json" },
             eslint: {
                 lintCommand:

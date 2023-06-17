@@ -1,6 +1,6 @@
 import { Component } from "solid-js"
 
-export const Home: Component = () => {
+export const Splash: Component = () => {
     return (
         <div>
             <p>Hello</p>

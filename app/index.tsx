@@ -1,7 +1,17 @@
+import { Route, Router, Routes } from "@solidjs/router"
 import { render } from "solid-js/web"
-import { MainApp } from "./MainApp"
+import { Splash } from "./views/Splash"
 
-import "@unocss/reset/antfu.css"
+import "@unocss/reset/tailwind-compat.css"
 import "uno.css"
 
-render(() => <MainApp />, document.getElementById("app")!)
+render(
+    () => (
+        <Router>
+            <Routes>
+                <Route path="/" component={Splash} />
+            </Routes>
+        </Router>
+    ),
+    document.getElementById("app")!
+)

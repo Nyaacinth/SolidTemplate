@@ -1,6 +1,6 @@
 {
     "package": {
-        "productName": "Mira",
+        "productName": "solid-template",
         "version": "../package.json"
     },
     "build": {
@@ -12,7 +12,7 @@
     "tauri": {
         "windows": [
             {
-                "title": "Mira",
+                "title": "solid-template",
                 "width": 816,
                 "minWidth": 400,
                 "height": 624,
@@ -29,9 +29,9 @@
         },
         "bundle": {
             "active": true,
-            "identifier": "moe.nyaacinth.mira",
+            "identifier": "com.example.solid-template",
             "category": "Utility",
-            "shortDescription": "Mira Utility",
+            "shortDescription": "Solid Template (solid-template)",
             "icon": [
                 "icons/32x32.png",
                 "icons/128x128.png",
