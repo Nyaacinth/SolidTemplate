@@ -9,6 +9,12 @@
             "group": "build"
         },
         {
+            "label": "Build Vite Application",
+            "type": "npm",
+            "script": "build:vite",
+            "group": "build"
+        },
+        {
             "label": "Build Tauri Application",
             "type": "npm",
             "script": "build:tauri",
